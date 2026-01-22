@@ -5,6 +5,10 @@ Level::Level(sf::RenderWindow& hwnd, Input& in) :
 {
 	// initialise game objects
 
+	m_snake.setPosition({ 50.0f, 50.0f });
+	m_snake.setRadius(20.0f);
+	m_snake.setFillColor(sf::Color::Magenta);
+
 }
 
 // handle user input
@@ -26,7 +30,7 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	m_window.draw(m_snake);
 	endDraw();
 }
 

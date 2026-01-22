@@ -12,8 +12,12 @@ public:
 	void render();
 
 private:
+
+	sf::CircleShape m_snake;
+
 	// Default functions for rendering to the screen.
 
 	// Default variables for level class.
 	
 };
+
