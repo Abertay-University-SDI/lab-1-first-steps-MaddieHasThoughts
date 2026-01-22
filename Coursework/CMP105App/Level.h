@@ -11,14 +11,17 @@ public:
 	void update(float dt);
 	void render();
 
+	void spawnFood();
+
 private:
 
 	sf::CircleShape m_snake;
+	sf::CircleShape m_food;
+
 	float m_speed = 200.0f;
 
 	// Default functions for rendering to the screen.
 
 	// Default variables for level class.
-	
 };
 
