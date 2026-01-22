@@ -14,6 +14,7 @@ public:
 private:
 
 	sf::CircleShape m_snake;
+	float m_speed = 200.0f;
 
 	// Default functions for rendering to the screen.
 
